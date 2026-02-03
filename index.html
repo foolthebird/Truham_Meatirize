@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meatirize - Premium Sourcing</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <style>
+        /* Global Dark Theme Refinements */
+        body {
+            background-color: #121212; /* Deep dark background */
+            color: #ffffff; /* Global white text */
+        }
+        
+        /* Navigation Refinement */
+        .navbar {
+            background-color: #1a1a1a !important;
+            border-bottom: 1px solid #333;
+        }
+        .navbar .nav-link, .navbar-brand {
+            color: #ffffff !important;
+        }
+        .navbar .nav-link.active {
+            color: #ff4d4d !important; /* Red highlight for active link */
+        }
+
+        /* Card Refinements for Dark Mode */
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333 !important;
+        }
+        .card-title {
+            color: #ffffff !important;
+        }
+        .card-text {
+            color: #b0b0b0 !important;
+        }
+
+        /* Dark background utility for specific sections */
+        .bg-custom-dark {
+            background-color: #1a1a1a !important;
+            color: #f8f9fa;
+        }
+
+        /* Gold accent for branding highlights */
+        .text-gold {
+            color: #c5a059 !important;
+        }
+
+        /* Section Spacing & Borders */
+        .footer-branding {
+            border-top: 1px solid #333;
+        }
+
+        hr {
+            border-top: 1px solid #444;
+            opacity: 1;
+        }
+
+        /* Form Controls for Dark Mode */
+        .form-control {
+            background-color: #2b2b2b;
+            border: 1px solid #444;
+            color: #ffffff;
+        }
+        .form-control:focus {
+            background-color: #333;
+            color: #ffffff;
+            border-color: #ff4d4d;
+        }
+        .form-control::placeholder {
+            color: #888;
+        }
+
+        /* Utility for muted white text */
+        .text-secondary-white {
+            color: #cccccc !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <!-- section 1 Navbar -->
+        <section class="row g-0">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-md navbar-dark py-3">
+                    <div class="container">
+                        <a href="#" class="navbar-brand fs-3 fw-bold">Meatirize</a>
+                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarcollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarcollapse">
+                            <div class="navbar-nav ms-auto">
+                                <a href="index.html" class="nav-link px-3 active">Home</a>
+                                <a href="shop.html" class="nav-link px-3">Shop</a>
+                                <a href="Sourcing.html" class="nav-link px-3">Sourcing</a>
+                                <a href="Our Story.html" class="nav-link px-3">Our Story</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <!-- section 2 carousel -->
+        <section class="row g-0">
+            <div class="col-md-12">
+                <div class="carousel slide" data-bs-ride="carousel" id="mycarousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Images/slide 2.jpg" alt="Premium Wagyu Beef" height="600px" width="100%" style="object-fit: cover; filter: brightness(0.7);">
+                            <div class="carousel-caption d-none d-md-block text-start" style="bottom: 20%;">
+                                <h1 class="display-3 fw-bold text-white">Unrivaled Marbling</h1>
+                                <p class="fs-4 text-white">Experience the gold standard of Japanese Wagyu.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=2070&auto=format&fit=crop" alt="Premium Tomahawk Steak" height="600px" width="100%" style="object-fit: cover; filter: brightness(0.7);">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?q=80&w=2070&auto=format&fit=crop" alt="Dry-Aged Premium Cuts" height="600px" width="100%" style="object-fit: cover; filter: brightness(0.7);">
+                        </div>
+                    </div>
+                    <a href="#mycarousel" data-bs-slide="prev" class="carousel-control-prev">
+                        <span class="carousel-control-prev-icon p-3 rounded-circle bg-dark bg-opacity-50"></span>
+                    </a>
+                    <a href="#mycarousel" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon p-3 rounded-circle bg-dark bg-opacity-50"></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Main Content Body -->
+        <main class="container py-5 mt-4">
+            <!-- Featured Story -->
+            <section class="row align-items-center mb-5 pb-5">
+                <div class="col-md-6 pe-md-5">
+                    <span class="text-danger fw-bold text-uppercase small ls-2">Since 2026</span>
+                    <h2 class="display-4 fw-bold mt-2 mb-4 text-white">The Meatirize Standard</h2>
+                    <p class="lead text-secondary-white mb-4">From the field to the fire, we ensure every cut tells a story of quality and dedication.</p>
+                    <p class="text-secondary-white mb-4 opacity-75">We work exclusively with small-scale farmers who prioritize the health of their livestock and the land. By cutting out the middleman, we ensure that you receive the freshest cuts possible, delivered directly to your kitchen with full traceability.</p>
+                    <a href="shop.html" class="btn btn-danger btn-lg px-5">Explore the Shop</a>
+                </div>
+                <div class="col-md-6 mt-4 mt-md-0">
+                    <div class="position-relative">
+                        <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?q=80&w=1000" class="img-fluid rounded shadow-lg" alt="Butcher at work" style="filter: brightness(0.9);">
+                        <div class="position-absolute bottom-0 start-0 bg-danger p-3 text-white m-4 rounded d-none d-lg-block">
+                            <h5 class="mb-0">Certified Artisans</h5>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- Product Showcase Section -->
+            <section class="row text-center mb-5 py-5">
+                <div class="col-12 mb-5">
+                    <h2 class="fw-bold text-white">Our Signature Selections</h2>
+                    <div class="mx-auto bg-danger" style="height: 3px; width: 60px;"></div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                         <img src="Images/ribeye.jpg" class="card-img-top rounded-top" alt="Ribeye" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Dry-Aged Ribeye</h5>
+                            <p class="card-text small">Aged for 28 days for maximum tenderness and deep, nutty flavor.</p>
+                            <a href="#" class="text-danger fw-bold text-decoration-none">View Cut &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=800" class="card-img-top rounded-top" alt="Lamb" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Pasture Lamb</h5>
+                            <p class="card-text small">Delicate, grass-fed lamb sourced from high-altitude farms.</p>
+                            <a href="#" class="text-danger fw-bold text-decoration-none">View Cut &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1628268909376-e8c44bb3153f?q=80&w=800" class="card-img-top rounded-top" alt="Wagyu" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4">
+                            <h5 class="card-title fw-bold">Purebred Wagyu</h5>
+                            <p class="card-text small">Exceptional marbling that melts at room temperature. The ultimate luxury.</p>
+                            <a href="#" class="text-danger fw-bold text-decoration-none">View Cut &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sourcing Information Section -->
+            <section class="row bg-custom-dark p-5 rounded-4 align-items-center shadow-lg mx-1">
+                <div class="col-md-4 text-center">
+                    <div class="p-3 border border-secondary rounded-circle d-inline-block">
+                        <img src="https://images.unsplash.com/photo-1500595046743-cd271d694d30?q=80&w=600" class="img-fluid rounded-circle shadow-sm" alt="Farm land" style="width: 220px; height: 220px; object-fit: cover; border: 4px solid #444;">
+                    </div>
+                </div>
+                <div class="col-md-8 pt-4 pt-md-0">
+                    <h2 class="fw-bold text-gold">Transparency in Every Bite</h2>
+                    <p class="lead text-light opacity-75">We believe you should know your farmer. No secrets, just great meat.</p>
+                    <div class="row mt-4 text-white-50">
+                        <div class="col-sm-6 mb-2"><i class="text-gold me-2">✓</i> Hormone & Antibiotic Free</div>
+                        <div class="col-sm-6 mb-2"><i class="text-gold me-2">✓</i> Sustainable Management</div>
+                        <div class="col-sm-6 mb-2"><i class="text-gold me-2">✓</i> Ethical Harvesting</div>
+                        <div class="col-sm-6 mb-2"><i class="text-gold me-2">✓</i> Grass-Fed Heritage</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Testimonials -->
+            <section class="row py-5 mt-5">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="fw-bold text-white">What Our Chefs Say</h2>
+                    <p class="text-white-50">Trusted by culinary professionals worldwide.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border-0 rounded-4 bg-custom-dark shadow-sm h-100">
+                        <p class="fst-italic text-white-50 mb-4">"The marbling on the Wagyu is unlike anything I've seen. Absolute perfection for my steakhouse."</p>
+                        <h6 class="fw-bold mb-0 text-white">— Chef Marcus V.</h6>
+                        <small class="text-danger fw-bold text-uppercase" style="font-size: 0.7rem;">Executive Chef</small>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border-0 rounded-4 bg-custom-dark shadow-sm h-100">
+                        <p class="fst-italic text-white-50 mb-4">"Finally, a supplier that cares about traceability. Knowing the farm origin changes the conversation."</p>
+                        <h6 class="fw-bold mb-0 text-white">— Sarah Jenkins</h6>
+                        <small class="text-danger fw-bold text-uppercase" style="font-size: 0.7rem;">Master Pitmaster</small>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="p-4 border-0 rounded-4 bg-custom-dark shadow-sm h-100">
+                        <p class="fst-italic text-white-50 mb-4">"The dry-aged ribeye is my go-to. The flavor profile is deep, complex, and consistently superior."</p>
+                        <h6 class="fw-bold mb-0 text-white">— David L.</h6>
+                        <small class="text-danger fw-bold text-uppercase" style="font-size: 0.7rem;">Culinary Enthusiast</small>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Join the Prime Club -->
+            <section class="row py-0 mt-5 bg-custom-dark rounded-4 shadow-sm overflow-hidden border border-secondary">
+                <div class="col-md-7 p-5">
+                    <h2 class="fw-bold display-6 text-white">Join the Prime Club</h2>
+                    <p class="lead text-white-50 mb-4">Get exclusive access to limited-run rare cuts and curated recipes.</p>
+                    <form class="row g-2">
+                        <div class="col-sm-8">
+                            <input type="email" class="form-control form-control-lg border-0" placeholder="Email address">
+                        </div>
+                        <div class="col-sm-4">
+                            <button type="submit" class="btn btn-danger btn-lg w-100">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-5 d-none d-md-block p-0">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000" alt="Grilled Steak" class="img-fluid h-100 w-100" style="object-fit: cover; filter: brightness(0.8);">
+                </div>
+            </section>
+        </main>
+
+        <!-- section 7 footer-->
+        <section class="row bg-custom-dark p-2 mt-5 footer-branding">
+            <div class="container d-flex flex-wrap pt-5 pb-4">
+                <div class="col-md-4 text-light px-4 mb-4">
+                    <h4 class="text-gold mb-4">About Us</h4>
+                    <p class="opacity-75 small">At Meatirize, we bridge the gap between local artisanal farmers and your table. Our mission is to provide ethically sourced meats that prioritize flavor and sustainability.</p>
+                    <p class="opacity-75 small">Every cut undergoes a rigorous check to ensure it meets our "Gold Standard."</p>
+                </div>
+
+                <div class="col-md-4 text-light px-4 mb-4">
+                    <h4 class="text-gold mb-4">Inquiries</h4>
+                    <form action="">
+                        <div class="mb-3">
+                            <input type="email" placeholder="Email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <textarea placeholder="Your Message" class="form-control" rows="3"></textarea>
+                        </div>
+                        <input type="submit" value="Send Message" class="btn btn-outline-danger w-100">
+                    </form>
+                </div>
+
+                <div class="col-md-4 px-4 mb-4">
+                    <h4 class="text-gold text-center mb-4">Stay Connected</h4>
+                    <div class="text-center mb-4">
+                        <a href="#" class="mx-2"><img src="Images/fb.png" alt="facebook" width="35" style="filter: brightness(0) invert(1);"></a>
+                        <a href="#" class="mx-2"><img src="Images/in.png" alt="Instagram" width="35" style="filter: brightness(0) invert(1);"></a>
+                        <a href="#" class="mx-2"><img src="Images/x.png" alt="x" width="35" style="filter: brightness(0) invert(1);"></a>
+                    </div>
+                    <p class="text-light text-center small opacity-75">Follow us for exclusive recipes and first access to seasonal rare cuts.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-white-50 bg-black py-4 border-top border-secondary">
+            <small>Developed by Ebird &copy; 2026. All rights reserved</small>
+        </footer>
+    </div>
+</body>
+
+</html>

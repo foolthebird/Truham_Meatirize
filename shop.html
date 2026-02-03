@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Meatirize Premium Sourcing</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <script src="js/bootstrap.js"></script>
+    <style>
+        /* Global Dark Theme consistency */
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .navbar {
+            background-color: #1a1a1a !important;
+            border-bottom: 1px solid #333;
+        }
+
+        .navbar .nav-link,
+        .navbar-brand {
+            color: #ffffff !important;
+        }
+
+        /* Product Card Styling - Removed bouncing/transform */
+        .card {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+            transition: border-color 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: #ff4d4d;
+        }
+
+        .card-title {
+            color: #ffffff;
+        }
+
+        .card-text {
+            color: #b0b0b0;
+        }
+
+        .price-tag {
+            color: #c5a059;
+            /* Gold accent */
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+
+        .category-sidebar {
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #333;
+        }
+
+        .category-link {
+            color: #cccccc;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
+            transition: color 0.2s;
+        }
+
+        .category-link:hover {
+            color: #ff4d4d;
+        }
+
+        .badge-sale {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #ff4d4d;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            z-index: 2;
+        }
+
+        footer {
+            background-color: #000000;
+            border-top: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark py-3 sticky-top">
+        <div class="container">
+            <a href="index.html" class="navbar-brand fs-3 fw-bold">Meatirize</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#shopNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="shopNavbar">
+                <div class="navbar-nav ms-auto">
+                    <a href="index.html" class="nav-link px-3">Home</a>
+                    <a href="shop.html" class="nav-link px-3 active" style="color: #ff4d4d !important;">Shop</a>
+                    <a href="Sourcing.html" class="nav-link px-3">Sourcing</a>
+                    <a href="Our Story.html" class="nav-link px-3">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="py-5 text-center bg-custom-dark"
+        style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1603360946369-dc9bb2258143?q=80&w=2000&auto=format&fit=crop'); background-size: cover; background-position: center;">
+        <div class="container py-4">
+            <h1 class="display-4 fw-bold">Premium Butcher Shop</h1>
+            <p class="lead">Hand-selected cuts delivered from the farm to your door.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row">
+            <!-- Sidebar Filters -->
+            <aside class="col-lg-3 mb-4">
+                <div class="category-sidebar">
+                    <h5 class="fw-bold mb-3" style="color: #c5a059;">Categories</h5>
+                    <nav>
+                        <a href="#" class="category-link">All Products</a>
+                        <a href="#" class="category-link">Signature Steaks</a>
+                        <a href="#" class="category-link">Dry-Aged Selection</a>
+                        <a href="#" class="category-link">Wagyu Specialists</a>
+                        <a href="#" class="category-link">Lamb & Poultry</a>
+                        <a href="#" class="category-link">Artisanal Bundles</a>
+                    </nav>
+                    <hr class="my-4 border-secondary">
+                    <h5 class="fw-bold mb-3" style="color: #c5a059;">Sort By</h5>
+                    <select class="form-select bg-dark text-white border-secondary">
+                        <option>Featured</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                        <option>Newest Arrivals</option>
+                    </select>
+                </div>
+            </aside>
+
+            <!-- Product Grid -->
+            <section class="col-lg-9">
+                <div class="row g-4">
+                    <!-- Product 1 -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100 position-relative">
+                            <span class="badge-sale">Best Seller</span>
+                            <img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Ribeye Steak" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">28-Day Dry Aged Ribeye</h5>
+                                <p class="card-text small mb-4">Exceptional marbling and intense beefy flavor. Sourced
+                                    from grass-fed cattle.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 5,800</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Wagyu Striploin" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">A5 Japanese Wagyu</h5>
+                                <p class="card-text small mb-4">Certified Kagoshima A5 Striploin. The ultimate
+                                    melt-in-your-mouth experience.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 15,500</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="Images/ Heritage Lamb chops.jpg"
+                                class="card-img-top" alt="Lamb Meat" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Heritage Lamb Chops</h5>
+                                <p class="card-text small mb-4">Rack of lamb, pasture-raised and delicately flavored.
+                                    Perfect for roasting.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 4,900</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Tomahawk Steak" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">King Tomahawk</h5>
+                                <p class="card-text small mb-4">A massive long-bone ribeye. A showstopper for any grill
+                                    master.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 11,000</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="https://images.unsplash.com/photo-1551028150-64b9f398f678?q=80&w=800&auto=format&fit=crop"
+                                class="card-img-top" alt="Beef Fillet" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Center-Cut Fillet</h5>
+                                <p class="card-text small mb-4">Lean, tender, and succulent. The most prized cut of the
+                                    tenderloin.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 6,700</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="Images/Roasted Boneless chicken.webp"
+                                class="card-img-top" alt="Tomahawk Steak" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Boneless  Roasted Lamb </h5>
+                                <p class="card-text small mb-4">A massive boneless ribeye. A showstopper for any grill
+                                    master.</p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 14,000</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Product 7 -->
+                    
+                    
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="Images/Roasted Lamp Leg.webp"
+                                class="card-img-top" alt="Roasted Lamp Leg" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">King of roasted Lamb</h5>
+                                <p class="card-text small mb-4">I love a good roast lamb.I hope you love it as much as I do!
+                                    </p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 21,000</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Product 8 -->
+
+
+
+                    <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="Images/Overhead-slow-roasted-pork-belly.webp"
+                                class="card-img-top" alt="Overhead-slow-roasted-pork-belly" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Roasted Pork Belly</h5>
+                                <p class="card-text small mb-4">who loves a good roast pork.I hope you love it as much as I do!
+                                    </p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 9,000</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+
+
+
+                     <div class="col-md-6 col-xl-4">
+                        <div class="card h-100">
+                            <img src="Images/Overhead-slow-roasted-pork-belly.webp"
+                                class="card-img-top" alt="Overhead-slow-roasted-pork-belly" style="height: 220px; object-fit: cover;">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Roast Chicken</h5>
+                                <p class="card-text small mb-4">Nothing beats a roasted chicken with its deliciousness haa
+                                    </p>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <span class="price-tag">KSH 9,000</span>
+                                    <button class="btn btn-danger btn-sm px-3">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                        
+                    
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-5 text-center">
+        <div class="container">
+            <h4 class="fw-bold mb-3" style="color: #c5a059;">Meatirize</h4>
+            <p class="text-white-50 small mb-4">Excellence in Sourcing. Perfection in Every Cut.</p>
+            <div class="mb-4">
+                <a href="#" class="text-white-50 mx-2 text-decoration-none small">Privacy Policy</a>
+                <a href="#" class="text-white-50 mx-2 text-decoration-none small">Shipping Info</a>
+                <a href="#" class="text-white-50 mx-2 text-decoration-none small">Returns</a>
+            </div>
+            <p class="text-white-50 small mb-0">Developed by Ebird &copy; 2026. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
